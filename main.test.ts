@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vite-plus/test";
 import { importXlsx, InputRowSchema, type InputRowT, OutputRowSchema, parse } from "./main.ts";
 
-describe("template-xlsx-parser", () => {
+describe("vp-xlsx", () => {
   it("imports data from example xlsx correctly", () => {
     const rows = importXlsx("data/data.example.xlsx");
     expect(rows).toBeInstanceOf(Array);

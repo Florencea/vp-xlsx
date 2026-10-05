@@ -1,7 +1,8 @@
 {
-  "name": "template-xlsx-parser",
+  "name": "vp-xlsx",
   "version": "1.0.0",
   "private": true,
+  "description": "Lightweight and type-safe Excel (.xlsx) parser and processor powered by Vite+ and Zod",
   "type": "module",
   "scripts": {
     "start": "node dist/main.mjs"

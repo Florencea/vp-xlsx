@@ -1,6 +1,6 @@
-# template-xlsx-parser
+# vp-xlsx
 
-A lightweight template for parsing and processing Excel (.xlsx) files using Node.js and TypeScript, powered by Vite+.
+A lightweight, type-safe library and CLI for parsing and processing Excel (`.xlsx`) files using Node.js, TypeScript, and Zod, powered by Vite+.
 
 ## Quick Start
 

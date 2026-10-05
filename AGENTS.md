@@ -16,7 +16,7 @@ This project uses Vite+ to manage development tools and runtimes. Always use `vp
 
 # Agent Development Guidelines
 
-Guidelines for AI agents and human contributors working on `template-xlsx-parser`.
+Guidelines for AI agents and human contributors working on `vp-xlsx`.
 
 ## 1. Quick Architecture Map
 
