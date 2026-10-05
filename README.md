@@ -1,19 +1,26 @@
 # template-xlsx-parser
 
-A lightweight template for parsing and processing Excel (.xlsx) files using Node.js and TypeScript.
+A lightweight template for parsing and processing Excel (.xlsx) files using Node.js and TypeScript, powered by Vite+.
 
 ## Quick Start
 
 ```sh
-# 1. Install dependencies (Node.js version is enforced via package.json)
-npm ci
+# 1. Install dependencies
+vp install
 
 # 2. Place your source data at data/data.example.xlsx
 
-# 3. Process the file
-npm start
+# 3. Run tests during development (powered by Vitest via Vite+)
+vp test
 
-# 4. The output will be saved to data/result.xlsx
+# 4. Build for production (compiles main.ts into dist/main.mjs via tsdown)
+vp pack
+
+# 5. Production run (runs compiled JavaScript)
+vpr start
+
+# 6. Unified static check (formatter, linter, and type checks)
+vp check
 ```
 
 ## Customization

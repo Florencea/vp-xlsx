@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
-    "module": "NodeNext"
-  }
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["main.ts", "main.test.ts", "vite.config.ts"]
 }
