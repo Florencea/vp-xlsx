@@ -19,6 +19,7 @@ minimumReleaseAgeExclude:
   - "@vitest/ui@5.0.5"
   - "@vitest/utils@5.0.5"
   - vitest@5.0.5
+  - "@types/node@26.6.6"
 saveExact: true
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@1.4.0
