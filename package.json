@@ -5,7 +5,22 @@
   "description": "Lightweight and type-safe Excel (.xlsx) parser and processor powered by Vite+ and Zod",
   "type": "module",
   "scripts": {
-    "start": "node dist/main.mjs"
+    "start": "node dist/main.mjs",
+    "agent:lint:fix": "vp check --fix",
+    "agent:test:unit": "vp test run --reporter=tap-flat --no-color",
+    "agent:verify:gate": "npm run agent:verify:unit && npm run build",
+    "agent:verify:inner": "npm run typecheck && npm run check",
+    "agent:verify:unit": "npm run agent:verify:inner && npm run agent:test:unit",
+    "build": "vp pack",
+    "check": "vp check",
+    "check:fast": "npm run typecheck && npm run lint && npm run agent:test:unit",
+    "fmt": "vp fmt",
+    "fmt:check": "vp fmt --check",
+    "lint": "vp lint",
+    "pack": "vp pack",
+    "test": "vp test run",
+    "typecheck": "tsc --noEmit --pretty false",
+    "verify": "npm run typecheck && npm run check && npm test && npm run build"
   },
   "dependencies": {
     "xlsx": "0.18.5",
@@ -14,10 +29,13 @@
   "devDependencies": {
     "@types/node": "26.6.6",
     "typescript": "7.0.2",
-    "vite-plus": "catalog:"
+    "vite-plus": "1.7.0"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@8.3.8000",
+    "vitest": "5.1.0"
   },
   "engines": {
     "node": "26.13.1"
-  },
-  "packageManager": "pnpm@12.22.0"
+  }
 }
